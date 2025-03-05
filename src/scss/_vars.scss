@@ -1,12 +1,14 @@
 :root {
 	--main-color:  #323264;
-	--second-color: #161618;
-	--mute-color: #313136;
-	--main-text-color: rgba(255, 255, 245, .86);
-	--second-text-color: rgba(235, 235, 245, .6);
+	--second-color: #46466E;
+	--mute-color: #686887;
+	--main-text-color: #000000;
+	--accent-color:#F0145A;
+	--second-text-color: #323264;
 	--hero-name-background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 	--brand-color: #646cff;
 	--brand-light-color: #747bff;
+	--main-h1:font-size 38px;
 }
 [data-theme="light"] {
 	--main-color: rgba(255, 255, 245, .86);

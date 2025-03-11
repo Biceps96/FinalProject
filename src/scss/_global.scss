@@ -11,10 +11,10 @@ body {
 }
 
 a {
-	color: #24A3FF;
+	color: $hover-color;
 
 	&:hover {
-		color: #F0145A;
+		color: $accent-color;
 	}
 }
 
@@ -23,14 +23,14 @@ a {
 }
 
 .d-sm-block {
-	@media (min-width: 768px) {
+	@media screen and (min-width: $breakpoint-md) {
 		display: block;
 	}
 
 }
 
 .d-md-block {
-	@media (min-width: 1024px) {
+	@media screen and (min-width: $breakpoint-lg) {
 		display: block;
 	}
 
@@ -68,27 +68,30 @@ a {
 	left:0;
 	right: 0;
 	top:0;
+	z-index: 5;
+
+
 	&__top-line {
 		background: rgba(245, 245, 250, 0.2);
-		margin: 0 -30px;
+		
 		display: flex;
 		justify-content: space-between;
 		padding: 10px 15px;
 		align-items: center;
 
-		@media (min-width:768px) {
+		@media screen and (min-width: $breakpoint-md) {
 			justify-content: flex-start;
 			background: none;
 			padding: 50px 45px 15px;
 		}
 
-		@media (min-width: 1024px) {
+		@media screen and (min-width: $breakpoint-lg) {
 			justify-content: flex-end;
 		}
 
 
 		li+li {
-			@media (min-width:768px) {
+			@media screen and (min-width: $breakpoint-md) {
 				position: relative;
 				padding-left: 20px;
 
@@ -107,9 +110,13 @@ a {
 		}
 
 		a {
+			&:hover {
+				color:$accent-color;
+			}
 			color: inherit;
 			text-decoration: none;
 		}
+	
 	}
 
 	&__lang-list {
@@ -129,7 +136,7 @@ a {
 
 		&.active,
 		&:hover {
-			background: #F0145A;
+			background-color: $accent-color;
 		}
 
 	}
@@ -144,12 +151,12 @@ a {
 		display: flex;
 		justify-content: space-between;
 		padding: 15px 0;
-		margin: 0 -15px;
-		@media (min-width:768px) {
+	
+		@media screen and (min-width: $breakpoint-md) {
 			padding: 10px 40px;
 			flex-direction: column;
 		}
-@media (min-width:1024px) {
+@media screen and (min-width: $breakpoint-lg) {
 		align-items: flex-end;
 	}
 
@@ -158,6 +165,9 @@ a {
 	
 
 	&__burger {
+		&:hover {
+			color: gray;
+		}
 		@media (min-width:768px) {
 			display: none;
 		}
@@ -196,6 +206,9 @@ a {
 		position: absolute;
 		top: 20px;
 		right: 20px;
+		width: 32px;
+		height: 32px;
+		cursor: pointer;
 		@media (min-width:768px) {
 			display: none;
 		}
@@ -234,5 +247,6 @@ a {
 
 
 	}
+
 
 }

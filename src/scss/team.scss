@@ -1,0 +1,22 @@
+.team {
+    background: $bg-color;
+
+    &__img {
+        border-radius: 12px;
+    }
+    &__info {
+        padding: 30px;
+    
+    }
+    &__name {
+        display: block;
+        font-weight: 700;
+        color: $text-color;
+    }
+
+    &__post {
+        font-size: 16px;
+        color: $text-color;
+
+    }
+}

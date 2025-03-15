@@ -1,4 +1,13 @@
+// js
+import Swiper from "swiper";
+import {Pagination } from 'swiper/modules';
+// styles
+import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import '../scss/style.scss'
+
+
 
 (function () {
     const isOpen = document.querySelector(".header__burger");
@@ -47,3 +56,14 @@ import '../scss/style.scss'
     });
   });
 })();
+
+const swiper = new Swiper(".swiper", {
+    modules: [Pagination],
+    pagination: {
+        el: '.swiper-pagination',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    
+});

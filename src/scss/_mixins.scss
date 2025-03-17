@@ -7,4 +7,12 @@
   color:transparent;
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   background-clip: text;
+  
+}
+
+@mixin text-tab {
+  color:transparent;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  
 }

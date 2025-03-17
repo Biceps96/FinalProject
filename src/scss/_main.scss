@@ -28,6 +28,13 @@
     }
 }
 
+.part-h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 
 
 .services {
@@ -114,7 +121,43 @@
 }
 
 
+.part {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    li {
+        width: 25%;
 
+        @media screen and (max-width: 1020px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 486px) {
+            width: 100%;
+        }
+
+    }
+
+    
+
+
+
+    a {
+        height: 120px;
+        padding: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        max-height: 100%;
+
+    }
+
+    
+}
 
 
 

@@ -18,6 +18,30 @@ a {
 	}
 }
 
+.gradient-text {
+	@include text-grad;
+}
+
+.text-tab {
+	@include text-tab;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
 .d-none {
 	display: none;
 }
@@ -47,6 +71,11 @@ a {
 	max-width: 1720px;
 	margin: 0 auto;
 	padding: 0 30px;
+
+	@media screen and (min-width:$breakpoint-md) {
+		padding: 0 60px;
+		
+	}
 }
 
 .bg-box {
